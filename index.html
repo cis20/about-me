@@ -540,6 +540,58 @@
       align-items: center;
       gap: 4px;
     }
+
+    /* Responsive adjustments for smartphones */
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 32px; /* Smaller font size for the title */
+      }
+
+      .content {
+        border-radius: 30px; /* Smaller border radius for the container */
+        padding: 16px; /* Reduce padding for smaller screens */
+      }
+
+      .main-content {
+        border-radius: 28px; /* Smaller border radius for the main content */
+      }
+
+      .photo-wrapper {
+        height: 40%; /* Adjust height for the photo wrapper */
+        max-height: 300px; /* Reduce max height for smaller screens */
+      }
+
+      .main-info {
+        padding: 16px; /* Reduce padding for smaller screens */
+      }
+
+      .title-container {
+        flex-direction: column; /* Stack title and info vertically */
+        align-items: flex-start; /* Align items to the start */
+      }
+
+      .title-info {
+        display: none; /* Hide title info on small screens */
+      }
+
+      .songs .song {
+        min-height: 60px; /* Reduce height of song items */
+        padding: 0 16px; /* Reduce padding for smaller screens */
+      }
+
+      .song-modal {
+        height: 300px; /* Adjust height for the song modal */
+      }
+
+      .song-modal-info {
+        padding: 16px; /* Reduce padding for smaller screens */
+      }
+
+      .modal.active {
+        width: 90%; /* Make modal width responsive */
+        height: auto; /* Allow modal height to adjust */
+      }
+    }
   </style>
 </head>
 <body>
